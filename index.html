@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>mc计算器</title>
+<script>
+           
+var jieguo=0;
+function jisuanqi(){
+var one=document.getElementById("one").value;
+one =parseFloat(one);
+var two=document.getElementById("two").value;
+two =parseFloat(two);
+
+
+jieguo=one*2/two;
+jieguo.toString();
+document.getElementById("jieguo").innerHTML=jieguo;
+}
+
+
+        </script>
+
+    </head>
+    <body>
+<input type="text" id="one" >输入建筑实际长度(单位米)
+
+<input type="text" id="two" >输入你的身高(单位米)
+
+<p id="jieguo">对应mc中方块的格数</p>
+<br/>
+<button onclick="jisuanqi()">计算</button>
+
+
+        
+    </body>
+</html>
